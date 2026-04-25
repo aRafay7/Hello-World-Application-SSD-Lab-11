@@ -19,6 +19,15 @@ steps {
 echo &#39;Deploying....&#39;
 // Here you can define commands for your deployment
 }
+  stage("test"){
+    steps {
+      when{
+        expression{
+          flag = = false
+        }
+      }
+      echo "testing project"
+    }
 }
 }
 }
