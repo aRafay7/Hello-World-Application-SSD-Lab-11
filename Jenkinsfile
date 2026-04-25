@@ -6,6 +6,9 @@ agent any
   tools{
     maven "Maven"
   }
+  parameters{
+
+  }
 stages {
 stage(&#39;Build&#39;) {
 steps {
