@@ -3,6 +3,9 @@ agent any
   environment{
     NEW_VERSION = '1.3.0'
   }
+  tools{
+    maven "Maven"
+  }
 stages {
 stage(&#39;Build&#39;) {
 steps {
